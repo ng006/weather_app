@@ -1,22 +1,19 @@
-* {
-    padding: 0;
-    margin: 0;
+body{
+    background-color: #7CB9E8;
+    overflow-x: hidden;    
 }
 
-body {
-    background-image: url("sky.jpg");
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/*horizontal Line CSS*/
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    width: 50rem;
 }
 
 .image {
     width: 100%;
 }
-
-.container {}
 
 #city {
     width: 20vw;
@@ -26,8 +23,56 @@ body {
 }
 
 .second {
-margin-top: 50%;
-align-items: center;
-    
-    
+margin: 0;
+align-items: center;    
 }
+
+.thrid-outer{
+    width: 100%;
+    display: inline-block;
+}
+
+.third {
+    display: flex;
+    justify-content: center;
+    background-color:antiquewhite;
+    width: 150px;
+    padding: 30px;
+    margin-left: 40%;
+    border-radius: 20px;
+    box-shadow: 20px 10px 30px grey;
+    }
+.content p{
+ font-size: 25px;
+ padding-bottom: 10px;
+}
+
+.sub-content{
+    display: flex;
+    align-items:baseline;
+    justify-content: space-around;
+    }
+.sub-content img{
+        width: 30px;
+        }
+
+/*Five Card Css*/
+
+.five-day{
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   justify-items: center;
+}
+
+/*Card Css*/
+
+.third-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:antiquewhite;
+    width: 150px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 20px 10px 30px grey;
+    }
