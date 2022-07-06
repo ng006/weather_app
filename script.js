@@ -16,11 +16,13 @@ let weather = {
   displayweather: function (data) {
     const { name } = data;
     const { temp } = data.main;
-    const { description } = data.weather[0];
-    console.log(name, temp, description);
+    const { icon } = data.weather[0];
+    console.log(name, temp, icon);
     document.querySelector(".cityName").innerText = name;
-    document.querySelector(".Condition").innerText = description;
-    document.querySelector(".Temperature").innerText = temp;
+    document.querySelector(".Temperature").innerText = Math.round(temp - 273.15)+"C";
+    document.querySelector(".icon").src =
+     "http://openweathermap.org/img/wn/" + icon +".png";
+    
   },
 search: function () {
     this.fetchweather(document.querySelector(".city").value)
